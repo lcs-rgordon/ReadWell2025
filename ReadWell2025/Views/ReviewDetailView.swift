@@ -31,26 +31,19 @@ struct ReviewDetailView: View {
                         .frame(height: 200)
                     
                     VStack(alignment: .leading) {
-                        Group {
-                            Text("Genre")
-                                .font(.headline)
-                            Text(reviewToShow.genre)
-                                .padding(.bottom, 16)
-                        }
                         
-                        Group {
-                            Text("Date Started")
-                                .font(.headline)
-                            Text(reviewToShow.dateStarted.formatted(date: .long, time: .omitted))
-                                .padding(.bottom, 16)
-                        }
-                        
-                        Group {
-                            Text("Date Finished")
-                                .font(.headline)
-                            Text(reviewToShow.dateFinished.formatted(date: .long, time: .omitted))
-                                .padding(.bottom, 16)
-                        }
+                        InfoDisplayView(
+                            title: "Genre",
+                            info: reviewToShow.genre
+                        )
+                        InfoDisplayView(
+                            title: "Date Started",
+                            info: reviewToShow.dateStarted.formatted(date: .long, time: .omitted)
+                        )
+                        InfoDisplayView(
+                            title: "Date Finished",
+                            info: reviewToShow.dateFinished.formatted(date: .long, time: .omitted)
+                        )
                         
                         Spacer()
                     }
