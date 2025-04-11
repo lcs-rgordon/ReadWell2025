@@ -34,9 +34,12 @@ struct ReviewDetailView: View {
             }
             .padding()
         }
+        .navigationTitle(reviewToShow.title)
     }
 }
 
 #Preview {
-    ReviewDetailView(reviewToShow: review1)
+    NavigationStack {
+        ReviewDetailView(reviewToShow: review1)
+    }
 }
