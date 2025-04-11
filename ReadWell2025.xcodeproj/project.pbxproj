@@ -14,6 +14,7 @@
 		811D6E812DA9D5F000463824 /* OpeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E802DA9D5F000463824 /* OpeningView.swift */; };
 		811D6E832DA9D60B00463824 /* ReviewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E822DA9D60B00463824 /* ReviewsListView.swift */; };
 		811D6E852DA9D83F00463824 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E842DA9D83F00463824 /* Review.swift */; };
+		811D6E872DA9D8CB00463824 /* ReviewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E862DA9D8C300463824 /* ReviewsListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		811D6E802DA9D5F000463824 /* OpeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningView.swift; sourceTree = "<group>"; };
 		811D6E822DA9D60B00463824 /* ReviewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsListView.swift; sourceTree = "<group>"; };
 		811D6E842DA9D83F00463824 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		811D6E862DA9D8C300463824 /* ReviewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		811D6E7E2DA9D3E800463824 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				811D6E862DA9D8C300463824 /* ReviewsListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			files = (
 				811D6E852DA9D83F00463824 /* Review.swift in Sources */,
 				811D6E832DA9D60B00463824 /* ReviewsListView.swift in Sources */,
+				811D6E872DA9D8CB00463824 /* ReviewsListViewModel.swift in Sources */,
 				811D6E792DA9D3A800463824 /* SplashScreenView.swift in Sources */,
 				811D6E7A2DA9D3A800463824 /* ReadWell2025App.swift in Sources */,
 				811D6E812DA9D5F000463824 /* OpeningView.swift in Sources */,

@@ -11,10 +11,33 @@ import SwiftUI
 struct ReviewsListView: View {
     
     // MARK: Stored properties
+    @State var viewModel = ReviewsListViewModel()
 
     // MARK: Computed properties
     var body: some View {
-        Text("This will show the list of books that have been reviewed")
+        NavigationStack {
+            
+            VStack {
+                
+                List(viewModel.reviews) { review in
+
+                    Text(review.title)
+                    
+                }
+                // Remove borders around the list
+                .listStyle(.plain)
+                // Set the background colour behind the list to be brown
+                .background {
+                    Color.readWellBrown
+                        .ignoresSafeArea()
+                }
+                // Make the background colour of the navigation bar pure white and visible
+                .toolbarBackground(Color.white, for: .navigationBar)
+                .toolbarBackground(.visible, for: .navigationBar)
+
+            }
+            .navigationTitle("Reviews")
+        }
     }
 }
 
