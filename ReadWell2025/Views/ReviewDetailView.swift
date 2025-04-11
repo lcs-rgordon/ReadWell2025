@@ -45,10 +45,14 @@ struct ReviewDetailView: View {
                             info: reviewToShow.dateFinished.formatted(date: .long, time: .omitted)
                         )
                         
-                        Spacer()
                     }
                     
                 }
+                
+                StarRatingView(rating: reviewToShow.starRating)
+                
+                Spacer()
+
             }
             .padding()
         }
@@ -61,3 +65,4 @@ struct ReviewDetailView: View {
         ReviewDetailView(reviewToShow: review1)
     }
 }
+
