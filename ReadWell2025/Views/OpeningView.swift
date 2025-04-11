@@ -18,7 +18,7 @@ struct OpeningView: View {
         if hasChosenToGetStarted == false {
             SplashScreenView(getStartedTapped: $hasChosenToGetStarted)
         } else {
-            LandingView()
+            ReviewsListView()
         }
         
     }

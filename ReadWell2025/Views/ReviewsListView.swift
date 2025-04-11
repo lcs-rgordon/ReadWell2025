@@ -1,5 +1,5 @@
 //
-//  LandingView.swift
+//  ReviewsListView.swift
 //  ReadWell2025
 //
 //  Created by Russell Gordon on 2025-04-11.
@@ -8,16 +8,16 @@
 import SwiftUI
 
 // NOTE: This presents the main tab view interface of the app
-struct LandingView: View {
+struct ReviewsListView: View {
     
     // MARK: Stored properties
 
     // MARK: Computed properties
     var body: some View {
-        Text("This will show the main tab interface")
+        Text("This will show the list of books that have been reviewed")
     }
 }
 
 #Preview {
-    LandingView()
+    ReviewsListView()
 }
