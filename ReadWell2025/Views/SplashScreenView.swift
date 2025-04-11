@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct SplashScreenView: View {
+    
+    // MARK: Stored properties
+    
+    // Tracks whether the user has asked to move past the start screen
+    @Binding var getStartedTapped: Bool
+    
     var body: some View {
         ZStack {
             
@@ -46,6 +52,12 @@ struct SplashScreenView: View {
                     .foregroundStyle(Color.white)
                     .font(.largeTitle)
                     .bold()
+                    .onTapGesture {
+                        // Fade between splash screen and the next view
+                        withAnimation {
+                            getStartedTapped = true
+                        }
+                    }
                 
                 Spacer()
             }
@@ -55,5 +67,9 @@ struct SplashScreenView: View {
 }
 
 #Preview {
-    SplashScreenView()
+    
+    @Previewable @State var getStartedTapped = false
+    
+    SplashScreenView(getStartedTapped: $getStartedTapped)
+    
 }

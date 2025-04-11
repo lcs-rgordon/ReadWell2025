@@ -11,6 +11,8 @@
 		811D6E7A2DA9D3A800463824 /* ReadWell2025App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E772DA9D3A800463824 /* ReadWell2025App.swift */; };
 		811D6E7B2DA9D3A800463824 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811D6E732DA9D3A800463824 /* Preview Assets.xcassets */; };
 		811D6E7C2DA9D3A800463824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811D6E752DA9D3A800463824 /* Assets.xcassets */; };
+		811D6E812DA9D5F000463824 /* OpeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E802DA9D5F000463824 /* OpeningView.swift */; };
+		811D6E832DA9D60B00463824 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E822DA9D60B00463824 /* LandingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		811D6E752DA9D3A800463824 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		811D6E762DA9D3A800463824 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		811D6E772DA9D3A800463824 /* ReadWell2025App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadWell2025App.swift; sourceTree = "<group>"; };
+		811D6E802DA9D5F000463824 /* OpeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningView.swift; sourceTree = "<group>"; };
+		811D6E822DA9D60B00463824 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +90,9 @@
 		811D6E7F2DA9D3F100463824 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				811D6E802DA9D5F000463824 /* OpeningView.swift */,
 				811D6E762DA9D3A800463824 /* SplashScreenView.swift */,
+				811D6E822DA9D60B00463824 /* LandingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,8 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811D6E832DA9D60B00463824 /* LandingView.swift in Sources */,
 				811D6E792DA9D3A800463824 /* SplashScreenView.swift in Sources */,
 				811D6E7A2DA9D3A800463824 /* ReadWell2025App.swift in Sources */,
+				811D6E812DA9D5F000463824 /* OpeningView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

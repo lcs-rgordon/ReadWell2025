@@ -11,7 +11,7 @@ import SwiftUI
 struct ReadWell2025App: App {
     var body: some Scene {
         WindowGroup {
-            SplashScreenView()
+            OpeningView()
         }
     }
 }
