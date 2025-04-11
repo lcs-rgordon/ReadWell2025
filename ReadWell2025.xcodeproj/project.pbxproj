@@ -6,17 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		811D6E792DA9D3A800463824 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E762DA9D3A800463824 /* SplashScreenView.swift */; };
+		811D6E7A2DA9D3A800463824 /* ReadWell2025App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E772DA9D3A800463824 /* ReadWell2025App.swift */; };
+		811D6E7B2DA9D3A800463824 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811D6E732DA9D3A800463824 /* Preview Assets.xcassets */; };
+		811D6E7C2DA9D3A800463824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811D6E752DA9D3A800463824 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		811D6E622DA9D3A100463824 /* ReadWell2025.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadWell2025.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		811D6E732DA9D3A800463824 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		811D6E752DA9D3A800463824 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		811D6E762DA9D3A800463824 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		811D6E772DA9D3A800463824 /* ReadWell2025App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadWell2025App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		811D6E642DA9D3A100463824 /* ReadWell2025 */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ReadWell2025;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		811D6E5F2DA9D3A100463824 /* Frameworks */ = {
@@ -32,7 +35,7 @@
 		811D6E592DA9D3A100463824 = {
 			isa = PBXGroup;
 			children = (
-				811D6E642DA9D3A100463824 /* ReadWell2025 */,
+				811D6E782DA9D3A800463824 /* ReadWell2025 */,
 				811D6E632DA9D3A100463824 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +46,49 @@
 				811D6E622DA9D3A100463824 /* ReadWell2025.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		811D6E742DA9D3A800463824 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				811D6E732DA9D3A800463824 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		811D6E782DA9D3A800463824 /* ReadWell2025 */ = {
+			isa = PBXGroup;
+			children = (
+				811D6E772DA9D3A800463824 /* ReadWell2025App.swift */,
+				811D6E7D2DA9D3E300463824 /* Model */,
+				811D6E7E2DA9D3E800463824 /* ViewModels */,
+				811D6E7F2DA9D3F100463824 /* Views */,
+				811D6E742DA9D3A800463824 /* Preview Content */,
+				811D6E752DA9D3A800463824 /* Assets.xcassets */,
+			);
+			path = ReadWell2025;
+			sourceTree = "<group>";
+		};
+		811D6E7D2DA9D3E300463824 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		811D6E7E2DA9D3E800463824 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		811D6E7F2DA9D3F100463824 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				811D6E762DA9D3A800463824 /* SplashScreenView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +105,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				811D6E642DA9D3A100463824 /* ReadWell2025 */,
 			);
 			name = ReadWell2025;
 			packageProductDependencies = (
@@ -109,6 +152,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811D6E7B2DA9D3A800463824 /* Preview Assets.xcassets in Resources */,
+				811D6E7C2DA9D3A800463824 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +164,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811D6E792DA9D3A800463824 /* SplashScreenView.swift in Sources */,
+				811D6E7A2DA9D3A800463824 /* ReadWell2025App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
