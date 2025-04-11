@@ -51,6 +51,11 @@ struct ReviewDetailView: View {
                 
                 StarRatingView(rating: reviewToShow.starRating)
                 
+                InfoDisplayView(
+                    title: "Review",
+                    info: reviewToShow.summary
+                )
+                
                 Spacer()
 
             }
