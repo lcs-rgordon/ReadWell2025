@@ -15,6 +15,7 @@
 		811D6E832DA9D60B00463824 /* ReviewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E822DA9D60B00463824 /* ReviewsListView.swift */; };
 		811D6E852DA9D83F00463824 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E842DA9D83F00463824 /* Review.swift */; };
 		811D6E872DA9D8CB00463824 /* ReviewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E862DA9D8C300463824 /* ReviewsListViewModel.swift */; };
+		811D6E892DA9DAF500463824 /* ReviewDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E882DA9DAF100463824 /* ReviewDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		811D6E822DA9D60B00463824 /* ReviewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsListView.swift; sourceTree = "<group>"; };
 		811D6E842DA9D83F00463824 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		811D6E862DA9D8C300463824 /* ReviewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsListViewModel.swift; sourceTree = "<group>"; };
+		811D6E882DA9DAF100463824 /* ReviewDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				811D6E802DA9D5F000463824 /* OpeningView.swift */,
 				811D6E762DA9D3A800463824 /* SplashScreenView.swift */,
 				811D6E822DA9D60B00463824 /* ReviewsListView.swift */,
+				811D6E882DA9DAF100463824 /* ReviewDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				811D6E852DA9D83F00463824 /* Review.swift in Sources */,
+				811D6E892DA9DAF500463824 /* ReviewDetailView.swift in Sources */,
 				811D6E832DA9D60B00463824 /* ReviewsListView.swift in Sources */,
 				811D6E872DA9D8CB00463824 /* ReviewsListViewModel.swift in Sources */,
 				811D6E792DA9D3A800463824 /* SplashScreenView.swift in Sources */,
