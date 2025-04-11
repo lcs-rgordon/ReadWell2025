@@ -19,9 +19,13 @@ struct ReviewsListView: View {
             
             VStack {
                 
-                List(viewModel.reviews) { review in
+                List(viewModel.reviews) { currentReview in
 
-                    Text(review.title)
+                    NavigationLink {
+                        ReviewDetailView(reviewToShow: currentReview)
+                    } label: {
+                        Text(currentReview.title)
+                    }
                     
                 }
                 // Remove borders around the list
