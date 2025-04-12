@@ -20,6 +20,7 @@
 		811D6E8D2DA9DD8000463824 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E8C2DA9DD8000463824 /* StarRatingView.swift */; };
 		811D6E8F2DA9EA8800463824 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 811D6E8E2DA9EA8500463824 /* README.md */; };
 		811D6E912DA9EE5E00463824 /* AddReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E902DA9EE5E00463824 /* AddReviewView.swift */; };
+		811D6E962DA9FA7700463824 /* BookCoverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E952DA9FA7700463824 /* BookCoverImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		811D6E8C2DA9DD8000463824 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
 		811D6E8E2DA9EA8500463824 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		811D6E902DA9EE5E00463824 /* AddReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewView.swift; sourceTree = "<group>"; };
+		811D6E952DA9FA7700463824 /* BookCoverImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCoverImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		811D6E7D2DA9D3E300463824 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				811D6E952DA9FA7700463824 /* BookCoverImage.swift */,
 				811D6E842DA9D83F00463824 /* Review.swift */,
 			);
 			path = Model;
@@ -195,6 +198,7 @@
 				811D6E852DA9D83F00463824 /* Review.swift in Sources */,
 				811D6E892DA9DAF500463824 /* ReviewDetailView.swift in Sources */,
 				811D6E832DA9D60B00463824 /* ReviewsListView.swift in Sources */,
+				811D6E962DA9FA7700463824 /* BookCoverImage.swift in Sources */,
 				811D6E872DA9D8CB00463824 /* ReviewsListViewModel.swift in Sources */,
 				811D6E792DA9D3A800463824 /* SplashScreenView.swift in Sources */,
 				811D6E8B2DA9DC7100463824 /* InfoDisplayView.swift in Sources */,
