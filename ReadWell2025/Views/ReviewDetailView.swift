@@ -25,10 +25,21 @@ struct ReviewDetailView: View {
 
                 HStack {
                     
-                    reviewToShow.coverImage
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 200)
+                    // Show a book cover image if one exists
+                    if let coverImage = reviewToShow.coverImage {
+                        coverImage
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 125)
+                    } else {
+                        
+                        // Otherwise show a placeholder
+                        Image(systemName: "book.fill")
+                            .symbolRenderingMode(.multicolor)
+                            .font(.system(size: 30))
+                            .foregroundStyle(.tint)
+                            .frame(width: 125)
+                    }
                     
                     VStack(alignment: .leading) {
                         

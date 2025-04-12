@@ -12,7 +12,7 @@ struct Review: Identifiable {
     // MARK: Stored properties
     let id = UUID()
     let title: String
-    let coverImage: Image
+    let coverImage: Image?
     let author: String
     let genre: String
     let dateStarted: Date

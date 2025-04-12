@@ -24,4 +24,13 @@ class ReviewsListViewModel {
         self.reviews = [review1, review2, review3]
     }
     
+    // MARK: Function(s)
+    
+    // Add a review to the list of reviews
+    func add(review: Review) {
+        
+        reviews.append(review)
+        
+    }
+    
 }

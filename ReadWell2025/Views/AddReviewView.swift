@@ -19,10 +19,13 @@ struct AddReviewView: View {
     @State var dateStarted: Date = Date()
     @State var dateFinished: Date = Date()
     @State var starRating: Int = 1
-    @State var review: String = ""
+    @State var summary: String = ""
     
     // Controls whether this sheet is showing or not
     @Binding var isShowing: Bool
+    
+    // Access the view model for our list of reviews
+    @Environment(ReviewsListViewModel.self) var viewModel
     
     // MARK: Computed properties
     var body: some View {
@@ -55,7 +58,7 @@ struct AddReviewView: View {
                 }
                 
                 Section(header: Text("Review")) {
-                    TextEditor(text: $review)
+                    TextEditor(text: $summary)
                         .frame(height: 200)
                 }
                                 
@@ -65,6 +68,23 @@ struct AddReviewView: View {
                 ToolbarItem(placement: .primaryAction) {
                     
                     Button {
+                        
+                        // Create a new local instance of the Review data structure
+                        // to hold this new review authored by the user
+                        // Add the new book review
+                        let newReview = Review(
+                            title: title,
+                            coverImage: nil,
+                            author: author,
+                            genre: genre,
+                            dateStarted: dateStarted,
+                            dateFinished: dateFinished,
+                            starRating: starRating,
+                            summary: summary
+                        )
+                        
+                        // Now add the review to the view model
+                        viewModel.add(review: newReview)
                         
                         // Dismiss this sheet
                         isShowing = false
@@ -83,4 +103,5 @@ struct AddReviewView: View {
 
 #Preview {
     AddReviewView(isShowing: Binding.constant(true))
+        .environment(ReviewsListViewModel())
 }

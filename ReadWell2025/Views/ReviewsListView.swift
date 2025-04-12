@@ -64,6 +64,8 @@ struct ReviewsListView: View {
             // Makes a sheet slide up showing AddReviewView
             .sheet(isPresented: $addNewReviewSheetIsShowing) {
                 AddReviewView(isShowing: $addNewReviewSheetIsShowing)
+                    // Make sure the add review view can access the view model that holds our list of reviews
+                    .environment(viewModel)
             }
         }
     }
