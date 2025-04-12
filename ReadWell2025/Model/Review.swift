@@ -7,12 +7,15 @@
 
 import SwiftUI
 
-struct Review: Identifiable {
+// NOTE: Adjustments to code to load an image from device storage were
+//       co-developed with assistance from ChatGPT.
+//       See acknowledgements section in README.
+struct Review: Identifiable, Codable {
     
     // MARK: Stored properties
-    let id = UUID()
+    let id: UUID
     let title: String
-    let coverImage: Image?
+    let coverImageFilename: String?  // Store image file name
     let author: String
     let genre: String
     let dateStarted: Date
@@ -20,37 +23,37 @@ struct Review: Identifiable {
     let starRating: Int
     let summary: String
     
+    // MARK: Computed properties
+    
+    // Returns the image from the filename (loaded from Documents directory)
+    var coverImage: Image? {
+        guard let filename = coverImageFilename,
+              let uiImage = loadImageFromDocuments(named: filename) else {
+            return nil
+        }
+        return Image(uiImage: uiImage)
+    }
+    
+    // MARK: Initializer(s)
+    init(id: UUID = UUID(),
+         title: String,
+         coverImageFilename: String?,
+         author: String,
+         genre: String,
+         dateStarted: Date,
+         dateFinished: Date,
+         starRating: Int,
+         summary: String) {
+        
+        self.id = id
+        self.title = title
+        self.coverImageFilename = coverImageFilename
+        self.author = author
+        self.genre = genre
+        self.dateStarted = dateStarted
+        self.dateFinished = dateFinished
+        self.starRating = starRating
+        self.summary = summary
+    }
+    
 }
-
-let review1 = Review(
-    title: "Dune",
-    coverImage: Image("Dune"),
-    author: "Frank Herbert",
-    genre: "Science Fiction",
-    dateStarted: Calendar.current.date(from: DateComponents(year: 2023, month: 1, day: 1)) ?? Date(), // 2023/01/01
-    dateFinished: Calendar.current.date(from: DateComponents(year: 2023, month: 1, day: 15)) ?? Date(), // 2023/01/15
-    starRating: 5,
-    summary: "A masterful science fiction epic with deep world-building and complex characters."
-)
-
-let review2 = Review(
-    title: "Outlander",
-    coverImage: Image("Outlander"),
-    author: "Diana Gabaldon",
-    genre: "Romance",
-    dateStarted: Calendar.current.date(from: DateComponents(year: 2023, month: 2, day: 1)) ?? Date(), // 2023/02/01
-    dateFinished: Calendar.current.date(from: DateComponents(year: 2023, month: 1, day: 20)) ?? Date(), // 2023/02/20
-    starRating: 4,
-    summary: "A captivating blend of historical fiction, romance, and time travel."
-)
-
-let review3 = Review(
-    title: "Pride and Prejudice",
-    coverImage: Image("PrideAndPrejudice"),
-    author: "Jane Austen",
-    genre: "Romance",
-    dateStarted: Calendar.current.date(from: DateComponents(year: 2023, month: 3, day: 1)) ?? Date(), // 2023/03/01
-    dateFinished: Calendar.current.date(from: DateComponents(year: 2023, month: 3, day: 10)) ?? Date(), // 2023/03/10
-    starRating: 5,
-    summary: "A timeless classic that explores themes of love, class, and social expectations."
-)

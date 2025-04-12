@@ -77,8 +77,20 @@ struct ReviewDetailView: View {
 }
 
 #Preview {
+    
+    let exampleReview = Review(
+        title: "Dune",
+        coverImageFilename: nil,
+        author: "Frank Herbert",
+        genre: "Science Fiction",
+        dateStarted: Calendar.current.date(from: DateComponents(year: 2023, month: 1, day: 1)) ?? Date(), // 2023/01/01
+        dateFinished: Calendar.current.date(from: DateComponents(year: 2023, month: 1, day: 15)) ?? Date(), // 2023/01/15
+        starRating: 5,
+        summary: "A masterful science fiction epic with deep world-building and complex characters."
+    )
+    
     NavigationStack {
-        ReviewDetailView(reviewToShow: review1)
+        ReviewDetailView(reviewToShow: exampleReview)
     }
 }
 

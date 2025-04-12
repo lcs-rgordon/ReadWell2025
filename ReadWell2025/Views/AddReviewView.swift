@@ -99,23 +99,32 @@ struct AddReviewView: View {
                 ToolbarItem(placement: .primaryAction) {
                     
                     Button {
-                        
-                        // Create a new local instance of the Review data structure
-                        // to hold this new review authored by the user
-                        // Add the new book review
-                        let newReview = Review(
-                            title: title,
-                            coverImage: newReviewBookCoverImage?.image,
-                            author: author,
-                            genre: genre,
-                            dateStarted: dateStarted,
-                            dateFinished: dateFinished,
-                            starRating: starRating,
-                            summary: summary
-                        )
-                        
-                        // Now add the review to the view model
-                        viewModel.add(review: newReview)
+
+                        // If a book cover image was selected, attempt to save it to the Documents directory
+                        // on the device, and then obtain the filename for that newly saved image
+                        //
+                        // NOTE: This code was co-developed with ChatGPT. See Acknowledgements section of README.
+                        if let newReviewBookCoverImage = newReviewBookCoverImage,
+                           let newReviewBookCoverImageFilename = saveImageToDocuments(newReviewBookCoverImage.uiImage)
+                        {
+
+                            // Create a new local instance of the Review data structure
+                            // to hold this new review authored by the user
+                            let newReview = Review(
+                                title: title,
+                                coverImageFilename: newReviewBookCoverImageFilename,
+                                author: author,
+                                genre: genre,
+                                dateStarted: dateStarted,
+                                dateFinished: dateFinished,
+                                starRating: starRating,
+                                summary: summary
+                            )
+                            
+                            // Now add the review to the view model
+                            viewModel.add(review: newReview)
+                            
+                        }
                         
                         // Dismiss this sheet
                         isShowing = false

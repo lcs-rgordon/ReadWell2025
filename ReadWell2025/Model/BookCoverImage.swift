@@ -7,11 +7,13 @@
 
 import Foundation
 import SwiftUI
+import UIKit
 
 struct BookCoverImage: Transferable, Equatable {
     
     // MARK: Stored properties
     let image: Image
+    let uiImage: UIImage
     let data: Data
     
     // MARK: Computed properties
@@ -52,7 +54,7 @@ extension BookCoverImage {
         let image = Image(uiImage: uiImage)
         
         // Initialize and return BookCoverImage instance
-        self.init(image: image, data: rawImageData)
+        self.init(image: image, uiImage: uiImage, data: rawImageData)
     }
     
 }
