@@ -11,8 +11,13 @@ import SwiftUI
 struct ReviewsListView: View {
     
     // MARK: Stored properties
+    
+    // Manages the data used within this view
     @State var viewModel = ReviewsListViewModel()
-
+    
+    // Whether the sheet to add a new review is showing or not
+    @State private var addNewReviewSheetIsShowing = false
+    
     // MARK: Computed properties
     var body: some View {
         NavigationStack {
@@ -41,6 +46,25 @@ struct ReviewsListView: View {
 
             }
             .navigationTitle("Reviews")
+            // Add a toolbar with a button to allow a new review to be authored
+            .toolbar {
+                
+                ToolbarItem(placement: .topBarLeading) {
+                    
+                    Button {
+                        // This would show the add review sheet
+                        addNewReviewSheetIsShowing = true
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+
+                }
+                
+            }
+            // Makes a sheet slide up showing AddReviewView
+            .sheet(isPresented: $addNewReviewSheetIsShowing) {
+                AddReviewView(isShowing: $addNewReviewSheetIsShowing)
+            }
         }
     }
 }
