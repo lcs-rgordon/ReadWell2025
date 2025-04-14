@@ -8,15 +8,14 @@
 import Foundation
 import UIKit
  
-// Return the directory that we can save user data in
-func getDocumentsDirectory() -> URL {
-    let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-    return paths[0]
-}
- 
-// Identify the file that data will be saved to in Documents directory
-let fileLabel = "BookReviews"
-
+// NOTE: These functions are used when saving an image associated with a book review
+//       to the Documents directory on the user's device.
+//
+//       It is not practical to encode an image to JSON, so instead, we save the
+//       image file itself to the Documents directory. Then, in the JSON file that stores
+//       the list of book reviews, we save the location (file name and path) that lead to
+//       where the image was saved as a PNG file.
+//
 // NOTE: The following two functions were co-developed with assistance from ChatGPT.
 // See acknowledgements section in README.
 
