@@ -23,6 +23,7 @@
 		811D6E962DA9FA7700463824 /* BookCoverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E952DA9FA7700463824 /* BookCoverImage.swift */; };
 		811D6E992DA9FCAB00463824 /* ImagePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E982DA9FCA300463824 /* ImagePersistence.swift */; };
 		811D6E9B2DAD302300463824 /* DataPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E9A2DAD302300463824 /* DataPersistence.swift */; };
+		811D6E9D2DAD31C800463824 /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E9C2DAD31C800463824 /* Searching.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		811D6E952DA9FA7700463824 /* BookCoverImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCoverImage.swift; sourceTree = "<group>"; };
 		811D6E982DA9FCA300463824 /* ImagePersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePersistence.swift; sourceTree = "<group>"; };
 		811D6E9A2DAD302300463824 /* DataPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistence.swift; sourceTree = "<group>"; };
+		811D6E9C2DAD31C800463824 /* Searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searching.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		811D6E972DA9FC9C00463824 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				811D6E9C2DAD31C800463824 /* Searching.swift */,
 				811D6E9A2DAD302300463824 /* DataPersistence.swift */,
 				811D6E982DA9FCA300463824 /* ImagePersistence.swift */,
 			);
@@ -218,6 +221,7 @@
 				811D6E872DA9D8CB00463824 /* ReviewsListViewModel.swift in Sources */,
 				811D6E792DA9D3A800463824 /* SplashScreenView.swift in Sources */,
 				811D6E8B2DA9DC7100463824 /* InfoDisplayView.swift in Sources */,
+				811D6E9D2DAD31C800463824 /* Searching.swift in Sources */,
 				811D6E912DA9EE5E00463824 /* AddReviewView.swift in Sources */,
 				811D6E7A2DA9D3A800463824 /* ReadWell2025App.swift in Sources */,
 				811D6E812DA9D5F000463824 /* OpeningView.swift in Sources */,

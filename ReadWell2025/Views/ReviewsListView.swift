@@ -18,13 +18,24 @@ struct ReviewsListView: View {
     // Whether the sheet to add a new review is showing or not
     @State private var addNewReviewSheetIsShowing = false
     
+    // What book is being searched for, if any
+    @State var providedSearchText = ""
+    
     // MARK: Computed properties
     var body: some View {
         NavigationStack {
             
             VStack {
                 
-                List(viewModel.reviews) { currentReview in
+                // Iterate over whatever is returned from the "searching" function
+                List(
+                    
+                    searching(
+                        originalList: viewModel.reviews,
+                        against: providedSearchText
+                    )
+                    
+                ) { currentReview in
 
                     NavigationLink {
                         ReviewDetailView(reviewToShow: currentReview)
@@ -33,6 +44,11 @@ struct ReviewsListView: View {
                     }
                     
                 }
+                // Show a search bar at the top of the list
+                // Connect the search bar to the "searchText" stored
+                // property in the view model
+                .searchable(text: $providedSearchText, prompt: "Search book titles")
+                
                 // Remove borders around the list
                 .listStyle(.plain)
                 // Set the background colour behind the list to be brown
