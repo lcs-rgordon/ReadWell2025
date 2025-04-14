@@ -37,6 +37,20 @@ class ReviewsListViewModel {
         
     }
     
+    // Delete a review from the list of reviews
+    func delete(_ reviewToDelete: Review) {
+        
+        // Remove the provided review from the list of saved favourites
+        reviews.removeAll { currentReview in
+            currentReview.id == reviewToDelete.id
+        }
+        
+        // How many saved reviews are there now?
+        print("There are now \(reviews.count) reviews saved.")
+     
+    }
+
+    
     // Load saved book reviews from file on device
     func loadSavedBookReviews() {
         

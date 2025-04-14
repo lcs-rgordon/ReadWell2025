@@ -42,6 +42,15 @@ struct ReviewsListView: View {
                     } label: {
                         Text(currentReview.title)
                     }
+                    .swipeActions {
+                        
+                        // Delete
+                        Button("Delete", role: .destructive) {
+                            withAnimation {
+                                viewModel.delete(currentReview)
+                            }
+                        }
+                    }
                     
                 }
                 // Show a search bar at the top of the list
