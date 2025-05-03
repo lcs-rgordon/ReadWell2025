@@ -24,6 +24,8 @@
 		811D6E992DA9FCAB00463824 /* ImagePersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E982DA9FCA300463824 /* ImagePersistence.swift */; };
 		811D6E9B2DAD302300463824 /* DataPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E9A2DAD302300463824 /* DataPersistence.swift */; };
 		811D6E9D2DAD31C800463824 /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811D6E9C2DAD31C800463824 /* Searching.swift */; };
+		817CC13A2DC6A020003B88B8 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817CC1392DC6A020003B88B8 /* RemoteImageView.swift */; };
+		817CC13C2DC6A04A003B88B8 /* RemoteImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817CC13B2DC6A04A003B88B8 /* RemoteImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		811D6E982DA9FCA300463824 /* ImagePersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePersistence.swift; sourceTree = "<group>"; };
 		811D6E9A2DAD302300463824 /* DataPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistence.swift; sourceTree = "<group>"; };
 		811D6E9C2DAD31C800463824 /* Searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searching.swift; sourceTree = "<group>"; };
+		817CC1392DC6A020003B88B8 /* RemoteImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		817CC13B2DC6A04A003B88B8 /* RemoteImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				811D6E862DA9D8C300463824 /* ReviewsListViewModel.swift */,
+				817CC13B2DC6A04A003B88B8 /* RemoteImageViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 				811D6E8A2DA9DC7100463824 /* InfoDisplayView.swift */,
 				811D6E8C2DA9DD8000463824 /* StarRatingView.swift */,
 				811D6E902DA9EE5E00463824 /* AddReviewView.swift */,
+				817CC1392DC6A020003B88B8 /* RemoteImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				817CC13C2DC6A04A003B88B8 /* RemoteImageViewModel.swift in Sources */,
 				811D6E992DA9FCAB00463824 /* ImagePersistence.swift in Sources */,
 				811D6E852DA9D83F00463824 /* Review.swift in Sources */,
 				811D6E892DA9DAF500463824 /* ReviewDetailView.swift in Sources */,
@@ -219,6 +226,7 @@
 				811D6E962DA9FA7700463824 /* BookCoverImage.swift in Sources */,
 				811D6E9B2DAD302300463824 /* DataPersistence.swift in Sources */,
 				811D6E872DA9D8CB00463824 /* ReviewsListViewModel.swift in Sources */,
+				817CC13A2DC6A020003B88B8 /* RemoteImageView.swift in Sources */,
 				811D6E792DA9D3A800463824 /* SplashScreenView.swift in Sources */,
 				811D6E8B2DA9DC7100463824 /* InfoDisplayView.swift in Sources */,
 				811D6E9D2DAD31C800463824 /* Searching.swift in Sources */,
